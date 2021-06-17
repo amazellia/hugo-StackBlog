@@ -1,7 +1,7 @@
 [build]
-    command = "npm run generate && hugo -b $URL/"
-    publish = "public"
-    functions = "functions"
+  command = "hugo"
+  context = "production"
+  publish = "public"
 
 [context.production.environment]
   HUGO_VERSION = "0.78.0"
