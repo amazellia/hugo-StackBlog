@@ -15,3 +15,7 @@ Started learning Hugo on June 16 2021 6 PM - 9 PM at Robotic Systems, Australia 
 - [When retrieving a remote repo (needed for the theme of Hugo)](https://docs.github.com/en/github/getting-started-with-github/getting-started-with-git/about-remote-repositories)
 - [Ghost CMS with Hugo](https://www.gojamstack.dev/posts/ghost-cms-hugo/)
 - [Using git submodule to host on Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify)
+- [JavaScript SPAs](https://docs.netlify.com/configure-builds/common-configurations/)
+- [Hugo on Netlify bu Netlify](https://docs.netlify.com/configure-builds/common-configurations/hugo/)
+- [Hosting Hugo on Netlify by Hugo](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/)
+- [Build Config in Netlify](https://docs.netlify.com/configure-builds/get-started/)
