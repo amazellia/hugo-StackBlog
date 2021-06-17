@@ -131,6 +131,14 @@ menu:
           url: /
           weight: -100
           pre: home
+        - identifier: about
+          name: About
+          url: /about/
+          weight: -90
+        - identifier: archive
+          name: Archive
+          url: /archive/
+          weight: -70
 
 related:
     includeNewer: true
