@@ -4,3 +4,6 @@
 [submodule "themes/Stack"]
 	path = themes/Stack
 	url = https://github.com/CaiJimmy/hugo-theme-stack.git
+[submodule "themes/Slack"]
+	path = themes/Slack
+	url = https://github.com/CaiJimmy/hugo-theme-stack.git
