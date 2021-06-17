@@ -1,5 +1,5 @@
 [build]
-  command = "hugo && npm run start"
+  command = "npm run start && hugo"
   context = "production"
   publish = "public"
 
