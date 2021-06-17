@@ -1,5 +1,5 @@
 [build]
-    command = "hugo -b $URL && npm run build:functions"
+    command = "npm run generate && hugo -b $URL/"
     publish = "public"
     functions = "functions"
 
