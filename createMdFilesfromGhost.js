@@ -23,7 +23,7 @@ const createMdFilesFromGhost = async () => {
         // Fetch the posts from the Ghost Content API
         const posts = await api.posts.browse({
             limit: 'all',
-            include: 'tags,authors',
+            include: 'tags,slug',
             formats: ['html'],
         });
 
@@ -53,27 +53,16 @@ const createMdFilesFromGhost = async () => {
             }
 
             // The format of og_image is /content/images/2020/04/social-image-filename.jog
-            // without the root of the URL. Prepend if necessary.
+            /* without the root of the URL. Prepend if necessary.
             let ogImage = post.og_image || post.feature_image || '';
             if (!ogImage.includes('https://your_ghost.url')) {
                 ogImage = 'https://your_ghost.url' + ogImage
             }
-            frontmatter.og_image = ogImage;
+            frontmatter.og_image = ogImage;*/
 
             if (post.tags && post.tags.length) {
                 frontmatter.categories = post.tags.map(t => t.name);
             }
-
-            // There should be at least one author.
-            if (!post.authors || !post.authors.length) {
-                return;
-            }
-
-            // Rewrite the avatar url for a smaller one.
-            frontmatter.authors = post.authors.map((author) => ({ 
-                ...author,
-                profile_image: author.profile_image.replace('content/images/', 'content/images/size/w100/'),
-            }));
 
             // If there's a canonical url, please add it.
             if (post.canonical_url) {
@@ -87,7 +76,7 @@ const createMdFilesFromGhost = async () => {
             const fileString = `---\n${yamlPost}\n---\n${content}\n`;
 
             // Save the final string of our file as a Markdown file
-            await fs.writeFile(path.join('content/posts', `${post.slug}.md`), fileString, { flag: 'w' });
+            await fs.writeFile(path.join('content/post', `${post.slug}.md`), fileString, { flag: 'w' });
         }));
 
     console.timeEnd('All posts converted to Markdown in');
