@@ -85,7 +85,6 @@ params:
 
     widgets:
         enabled:
-            - search
             - archives
             - tag-cloud
 
@@ -93,7 +92,7 @@ params:
             limit: 5
 
         tagCloud:
-            limit: 10
+            limit: 15
 
     opengraph:
         twitter:
