@@ -1,23 +1,23 @@
 {
-    "name": "atlas",
-    "private": true,
-    "scripts": {
-      "start": "hugo server",
-      "build": "hugo && npm run build:functions",
-      "generate": "node createMdFilesfromGhost.js",
-      "server": "hugo server"
-    },
-    "dependencies": {
-      "@tryghost/content-api": "^1.4.1",
-      "autoprefixer": "^9.7.6",
-      "dotenv": "^8.2.0",
-      "fs-extra": "^9.0.0",
-      "js-yaml": "^3.14.0",
-      "netlify-lambda": "^1.6.3",
-      "postcss-cli": "^7.1.1"
-      },
-    "browserlists": [
-      "ie >= 8",
-      "last 3 versions"
-    ]
-  }
+  "name": "atlas",
+  "private": true,
+  "scripts": {
+    "start": "hugo server",
+    "build": "hugo && npm run build:functions",
+    "build:functions": "netlify-lambda build assets/lambda",
+    "server": "hugo server"
+  },
+  "dependencies": {
+    "@tryghost/content-api": "^1.4.1",
+    "autoprefixer": "^9.7.6",
+    "dotenv": "^8.2.0",
+    "fs-extra": "^9.0.0",
+    "js-yaml": "^3.14.0",
+    "netlify-lambda": "^1.6.3",
+    "postcss-cli": "^7.1.1"
+  },
+  "browserlists": [
+    "ie >= 8",
+    "last 3 versions"
+  ]
+}
