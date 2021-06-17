@@ -1,5 +1,5 @@
 [build]
-  command = "npm run generate && hugo -b $URL/"
+  command = "hugo"
   context = "production"
   publish = "public"
 
