@@ -1,3 +1,6 @@
 [submodule "themes/mini"]
 	path = themes/mini
 	url = https://github.com/CaiJimmy/hugo-theme-stack.git
+[submodule "themes/Stack"]
+	path = themes/Stack
+	url = https://github.com/CaiJimmy/hugo-theme-stack.git
