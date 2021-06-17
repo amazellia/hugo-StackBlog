@@ -8,6 +8,7 @@ Started learning Hugo on June 16 2021 6 PM - 9 PM at Robotic Systems, Australia 
 3. `git commit` -> `git pull` -> `git push` in solving the deployment failure with Netlify 
 4. `git submodule update --force --recursive --init --remote` to refresh submodule
 5. Problem: Netlify could not deploy site, Solved - modified Netlify.toml to have a simple command `hugo` instead of `hugo && npm run build:functions`.
+6. Goal: to have Netlify automatically updated when Ghost CMS has a new post - figured that netlify.toml must have a command at their [Build] called `run npm start && hugo` with `start` being the build script in package.json. 
 
 ## Useful Websites
 - [Hugo Tutorial by Sora and Sharlene](https://tutorial-blog.netlify.app)
