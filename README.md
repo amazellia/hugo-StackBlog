@@ -7,6 +7,7 @@ Started learning Hugo on June 16 2021 6 PM - 9 PM at Robotic Systems, Australia 
 2. "echo" and ">>.env" is not needed in .env to call on Ghost CMS URL and Key.
 3. `git commit` -> `git pull` -> `git push` in solving the deployment failure with Netlify 
 4. `git submodule update --force --recursive --init --remote` to refresh submodule
+5. Problem: Netlify could not deploy site, Solved - modified Netlify.toml to have a simple command `hugo` instead of `hugo && npm run build:functions`.
 
 ## Useful Websites
 - [Hugo Tutorial by Sora and Sharlene](https://tutorial-blog.netlify.app)
