@@ -10,3 +10,4 @@ June 17 2021
 ## Useful Websites
 - [Hugo Tutorial by Sora and Sharlene](https://tutorial-blog.netlify.app)
 - [When retrieving a remote repo (needed for the theme of Hugo)](https://docs.github.com/en/github/getting-started-with-github/getting-started-with-git/about-remote-repositories)
+- [Ghost CMS with Hugo](https://www.gojamstack.dev/posts/ghost-cms-hugo/)
