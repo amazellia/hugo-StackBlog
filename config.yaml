@@ -1,6 +1,6 @@
 baseurl: https://example.com
 languageCode: en-us
-theme: mini
+theme: Stack
 paginate: 5
 title: apdv
 
