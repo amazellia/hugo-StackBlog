@@ -145,8 +145,6 @@ related:
           weight: 200
 
 markup:
-    goldmark:
-        renderer:
-            unsafe: true
-    highlight:
-        noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true

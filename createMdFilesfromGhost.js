@@ -23,7 +23,7 @@ const createMdFilesFromGhost = async () => {
         // Fetch the posts from the Ghost Content API
         const posts = await api.posts.browse({
             limit: 'all',
-            include: 'tags,slug',
+            include: 'tags,authors',
             formats: ['html'],
         });
 
@@ -53,16 +53,17 @@ const createMdFilesFromGhost = async () => {
             }
 
             // The format of og_image is /content/images/2020/04/social-image-filename.jog
-            /* without the root of the URL. Prepend if necessary.
+            // without the root of the URL. Prepend if necessary.
             let ogImage = post.og_image || post.feature_image || '';
-            if (!ogImage.includes('https://your_ghost.url')) {
-                ogImage = 'https://your_ghost.url' + ogImage
+            if (!ogImage.includes('https://apdv.herokuapp.com')) {
+                ogImage = 'https://apdv.herokuapp.com' + ogImage
             }
-            frontmatter.og_image = ogImage;*/
+            frontmatter.og_image = ogImage;
 
             if (post.tags && post.tags.length) {
                 frontmatter.categories = post.tags.map(t => t.name);
             }
+
 
             // If there's a canonical url, please add it.
             if (post.canonical_url) {
