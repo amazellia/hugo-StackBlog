@@ -2,7 +2,7 @@
   "name": "atlas",
   "private": true,
   "scripts": {
-    "build": "node createMdFilesfromGhost.js"
+    "start": "node createMdFilesfromGhost.js"
   },
   "dependencies": {
     "@tryghost/content-api": "^1.4.1",
