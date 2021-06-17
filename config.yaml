@@ -1,6 +1,6 @@
 baseurl: https://example.com
 languageCode: en-us
-theme: Stack
+theme: Slack
 paginate: 5
 title: apdv
 
