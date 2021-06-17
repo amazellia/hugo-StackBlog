@@ -6,3 +6,11 @@
 [context.production.environment]
   HUGO_VERSION = "0.78.0"
   HUGO_ENV = "production"
+  
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[build]
+    command = "npm run generate && hugo -b $URL/"
