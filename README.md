@@ -2,7 +2,7 @@
 Started learning Hugo on June 16 2021 6 PM - 9 PM at Robotic Systems, Australia from the Newcastle Coders Group, tutorial hosted by Sora and Sharlene. After that night, I have continued building it up and learning how to use it such as integrating a headless CMS Ghost and tuning different themes.
 
 ## What I have Learned
-June 17 2021
+### June 17 2021
 1. hugo serve
 2. "echo" and ">>.env" is not needed in .env to call on Ghost CMS URL and Key.
 3. git commit -> git pull -> git push in solving the deployment failure with Netlify 
